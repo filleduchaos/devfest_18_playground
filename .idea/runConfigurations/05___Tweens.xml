@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="05 - Tweens" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/flutter_animation_basics/lib/05_tweens/main.dart" />
+    <method />
+  </configuration>
+</component>

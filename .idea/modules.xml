@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/devfest_18_playground.iml" filepath="$PROJECT_DIR$/devfest_18_playground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flutter_animation_basics/.android/Flutter/flutter.iml" filepath="$PROJECT_DIR$/flutter_animation_basics/.android/Flutter/flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flutter_animation_basics/flutter_animation_basics.iml" filepath="$PROJECT_DIR$/flutter_animation_basics/flutter_animation_basics.iml" />
+    </modules>
+  </component>
+</project>

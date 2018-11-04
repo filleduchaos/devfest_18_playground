@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Venetian Gallery</string>
+    <string name="instructions">Tap the image to change it</string>
+    <string name="permissions_explanation">This app needs access to your SD card to show your pictures</string>
+</resources>

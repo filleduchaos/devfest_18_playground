@@ -1,0 +1,20 @@
+name: flutter_animation_basics
+description: Demonstrating the basics of animation in Flutter
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  module:
+    androidPackage: me.filleduchaos.flutteranimationbasics
+    iosBundleIdentifier: me.filleduchaos.flutterAnimationBasics

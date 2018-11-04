@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="02 - Explicit Animations" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/flutter_animation_basics/lib/02_explicit_animations/main.dart" />
+    <method />
+  </configuration>
+</component>

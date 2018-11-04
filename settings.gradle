@@ -1,0 +1,6 @@
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir.parentFile,
+  'devfest_18_playground/flutter_animation_basics/.android/include_flutter.groovy'
+))
