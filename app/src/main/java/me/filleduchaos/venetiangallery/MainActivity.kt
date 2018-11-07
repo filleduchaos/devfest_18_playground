@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun venetianSetup() {
-        loadTenImages()
+        loadFirstTenImages()
 
         val venetianView = Flutter.createView(this, lifecycle, getImage())
 
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         addContentView(venetianView, layout.layoutParams)
     }
 
-    private fun loadTenImages() {
+    private fun loadFirstTenImages() {
         val columns = arrayOf(MediaStore.Images.ImageColumns.DATA)
         val dateTaken = MediaStore.Images.ImageColumns.DATE_TAKEN
         val cursor = contentResolver.query(
