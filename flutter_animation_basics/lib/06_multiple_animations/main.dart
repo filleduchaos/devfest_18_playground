@@ -37,18 +37,18 @@ const _kMinSize = 120.0;
 class _RotatingBoxState extends State<RotatingBox>
 with TickerProviderStateMixin {
   AnimationController _spinController;
-  AnimationController _shrinkController;
+  AnimationController _sizeController;
   Animation<double> _spin;
   Animation<double> _size;
 
   void _onTapDown(TapDownDetails _) {
-    _spinController..addStatusListener(_spinListener)..forward();
-    _shrinkController.forward();
+    _sizeController.forward();
+    _spinController.forward();
   }
 
   void _onTapUp(TapUpDetails _) {
-    _spinController.removeStatusListener(_spinListener);
-    _shrinkController.reverse();
+    _spinController.stop();
+    _sizeController.reverse();
   }
 
   void _spinListener(AnimationStatus status) {
@@ -63,7 +63,7 @@ with TickerProviderStateMixin {
     _spinController = AnimationController(
       duration: widget.spinDuration,
       vsync: this,
-    );
+    )..addStatusListener(_spinListener);
     _spin = Tween<double>(begin: 0.0, end: math.pi * 2).animate(
       CurvedAnimation(
         parent: _spinController,
@@ -71,13 +71,13 @@ with TickerProviderStateMixin {
       ),
     );
 
-    _shrinkController = AnimationController(
+    _sizeController = AnimationController(
       duration: widget.shrinkDuration,
       vsync: this,
     );
     _size = Tween<double>(begin: _kMaxSize, end: _kMinSize).animate(
       CurvedAnimation(
-        parent: _shrinkController,
+        parent: _sizeController,
         curve: Curves.bounceOut,
         reverseCurve: Curves.bounceOut.flipped,
       ),
@@ -87,7 +87,7 @@ with TickerProviderStateMixin {
   @override
   void dispose() {
     _spinController?.dispose();
-    _shrinkController?.dispose();
+    _sizeController?.dispose();
     super.dispose();
   }
 
@@ -97,7 +97,7 @@ with TickerProviderStateMixin {
       onTapDown: _onTapDown,
       onTapUp: _onTapUp,
       child: AnimatedBuilder(
-        animation: _spin,
+        animation: _spinController,
         builder: (_, child) {
           return Transform.rotate(
             angle: _spin.value,
@@ -105,7 +105,7 @@ with TickerProviderStateMixin {
           );
         },
         child: AnimatedBuilder(
-          animation: _size,
+          animation: _sizeController,
           builder: (_, __) {
             return Container(
               color: yueGuangLanBlue,

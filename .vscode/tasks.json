@@ -1,0 +1,77 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "01 - Implicit Animations",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/01_implicit_animations/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "02 - Explicit Animations",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/02-explicit_animations/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "03 - Encapsulating Animations",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/03_encapsulating_animations/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "04 - Curves",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/04_curves/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "05 - Tweens",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/05_tweens/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "06 - Multiple Animations",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/06_multiple_animations/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+    {
+      "label": "07 - Staggered Animations",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-t", "lib/07_staggered_animations/main.dart"],
+      "options": {
+        "cwd": "${workspaceRoot}/flutter_animation_basics"
+      },
+      "group": "build"
+    },
+  ]
+}

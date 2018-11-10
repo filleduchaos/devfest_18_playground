@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "Flutter Animation Basics",
+      "path": "flutter_animation_basics",
+    },
+    {
+      "name": "Android - Venetian Gallery",
+      "path": "app"
+    },
+    {
+      "name": "DevFest 18 Playground",
+      "path": "."
+    }
+  ]
+}
